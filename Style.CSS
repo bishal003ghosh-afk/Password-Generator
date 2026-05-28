@@ -1,0 +1,94 @@
+/* Modern Dark Theme Password Generator */
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Main Box */
+.container {
+    background: rgba(30, 30, 30, 0.95);
+    padding: 30px;
+    border-radius: 18px;
+    width: 340px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Heading */
+.container h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #00d4ff;
+    letter-spacing: 1px;
+}
+
+/* Labels */
+.options label {
+    display: block;
+    margin: 10px 0;
+    text-align: left;
+    font-size: 15px;
+}
+
+/* Inputs and Buttons */
+input,
+button {
+    width: 100%;
+    margin: 12px 0;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+/* Password Box */
+input {
+    background: #2a2a2a;
+    color: white;
+    border: 1px solid #444;
+}
+
+/* Button Style */
+button {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Hover Effect */
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 114, 255, 0.5);
+}
+
+/* Checkbox Styling */
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
